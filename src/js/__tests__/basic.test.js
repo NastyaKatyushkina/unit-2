@@ -11,7 +11,6 @@ test('healthSort', () => {
     { name: 'лучник', health: 80 },
     { name: 'мечник', health: 10 },
   ];
-
   expect(healthSort(data)).toEqual(dataSort);
 });
 test('healthSort1', () => {
@@ -25,6 +24,5 @@ test('healthSort1', () => {
     { name: 'лучник', health: 100 },
     { name: 'мечник', health: 80 },
   ];
-
   expect(healthSort(data)).not.toBe(dataSort);
 });
