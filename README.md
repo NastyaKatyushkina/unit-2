@@ -1,1 +1,1 @@
-[![Build Status](https://ci.appveyor.com/project/NastyaKatyushkina/unit-2)](https://github.com/NastyaKatyushkina/unit-2)
+[![Build status](https://ci.appveyor.com/api/projects/status/99nw6iw6982c95rj/branch/main?svg=true)](https://ci.appveyor.com/project/NastyaKatyushkina/unit-2/branch/main)
