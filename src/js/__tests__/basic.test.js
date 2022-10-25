@@ -1,28 +1,25 @@
-import healthSort from '../health';
+import heroesSort from '../app';
 
-test('healthSort', () => {
-  const data = [
-    { name: 'мечник', health: 10 },
-    { name: 'маг', health: 100 },
-    { name: 'лучник', health: 80 },
-  ];
-  const dataSort = [
-    { name: 'маг', health: 100 },
-    { name: 'лучник', health: 80 },
-    { name: 'мечник', health: 10 },
-  ];
-  expect(healthSort(data)).toEqual(dataSort);
+const heroes = [
+  { name: 'мечник', health: 10 },
+  { name: 'маг', health: 100 },
+  { name: 'лучник', health: 80 },
+];
+const sortedHeroes = [
+  { name: 'маг', health: 100 },
+  { name: 'лучник', health: 80 },
+  { name: 'мечник', health: 10 },
+];
+const result = heroesSort(heroes);
+
+test('toEqual', () => {
+  expect(result).toEqual(sortedHeroes);
 });
-test('healthSort1', () => {
-  const data = [
-    { name: 'мечник', health: 10 },
-    { name: 'маг', health: 100 },
-    { name: 'лучник', health: 80 },
-  ];
-  const dataSort = [
-    { name: 'маг', health: 10 },
-    { name: 'лучник', health: 100 },
-    { name: 'мечник', health: 80 },
-  ];
-  expect(healthSort(data)).not.toBe(dataSort);
+
+test('toBe', () => {
+  expect(JSON.stringify(result)).toBe(JSON.stringify(sortedHeroes));
+});
+
+test('not.toBe', () => {
+  expect(result).not.toBe(sortedHeroes);
 });
